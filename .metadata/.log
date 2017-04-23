@@ -1,0 +1,121 @@
+!SESSION 2017-04-23 14:55:49.007 -----------------------------------------------
+eclipse.buildId=3.8.4.201703310825-RELEASE-e46
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.ui 2 2 2017-04-23 14:59:59.811
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-04-23 14:59:59.821
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-04-23 14:59:59.822
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-23 15:00:02.872
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-23 15:00:02.874
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 15:00:10.866
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Alejandro'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-04-23 15:00:39.219
+!MESSAGE Error creating server instance with command:
+ "C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\tcruntime-instance.bat create base-instance -t base --force -v 8.5.9.B.RELEASE". Check access permission for the directory C:/Program Files/STS/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1 and its files and subdirectories.
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-04-23 15:00:39.219
+!MESSAGE The instance creation command failed and returned code 1
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-04-23 15:00:39.219
+!MESSAGE Output of the instance creation command:
+Creating instance 'base-instance' ...
+  Using separate layout
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Failed to create directory 'C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:23)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:106)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:35)
+	at com.springsource.tcruntime.instance.internal.AbstractCommand.execute(AbstractCommand.java:25)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.run(TcRuntimeInstance.java:84)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.main(TcRuntimeInstance.java:163)
+Caused by: java.io.IOException: Failed to create directory 'C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.util.FileUtils.writeFile(FileUtils.java:117)
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:21)
+	... 5 more
+
+
+!ENTRY org.springsource.ide.eclipse.commons.configurator 4 0 2017-04-23 15:00:39.220
+!MESSAGE The server could not be created.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error creating server instance with command:
+ "C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\tcruntime-instance.bat create base-instance -t base --force -v 8.5.9.B.RELEASE". Check access permission for the directory C:/Program Files/STS/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1 and its files and subdirectories.
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.handleResult(TcServerUtil.java:157)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.executeInstanceCreation(TcServerUtil.java:110)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServer21ServerHandlerCallback.configureServer(TcServer21ServerHandlerCallback.java:48)
+	at org.springsource.ide.eclipse.commons.internal.configurator.server.ServerDescriptor$ServerHandlerCallbackDelegate.configureServer(ServerDescriptor.java:40)
+	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:318)
+	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:157)
+	at org.springsource.ide.eclipse.commons.internal.configurator.server.ConfigurableServerExtension.configure(ConfigurableServerExtension.java:70)
+	at org.springsource.ide.eclipse.commons.internal.configurator.ConfiguratorImporter$4.run(ConfiguratorImporter.java:439)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: The instance creation command failed and returned code 1
+Contains: Output of the instance creation command:
+Creating instance 'base-instance' ...
+  Using separate layout
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Failed to create directory 'C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:23)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:106)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:35)
+	at com.springsource.tcruntime.instance.internal.AbstractCommand.execute(AbstractCommand.java:25)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.run(TcRuntimeInstance.java:84)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.main(TcRuntimeInstance.java:163)
+Caused by: java.io.IOException: Failed to create directory 'C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.util.FileUtils.writeFile(FileUtils.java:117)
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:21)
+	... 5 more
+
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-04-23 15:00:39.256
+!MESSAGE Error creating server instance with command:
+ "C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\tcruntime-instance.bat create base-instance -t base --force -v 8.5.9.B.RELEASE". Check access permission for the directory C:/Program Files/STS/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1 and its files and subdirectories.
+!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-04-23 15:00:39.256
+!MESSAGE The instance creation command failed and returned code 1
+!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-04-23 15:00:39.256
+!MESSAGE Output of the instance creation command:
+Creating instance 'base-instance' ...
+  Using separate layout
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Failed to create directory 'C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:23)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:106)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:35)
+	at com.springsource.tcruntime.instance.internal.AbstractCommand.execute(AbstractCommand.java:25)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.run(TcRuntimeInstance.java:84)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.main(TcRuntimeInstance.java:163)
+Caused by: java.io.IOException: Failed to create directory 'C:\Program Files\STS\sts-bundle\pivotal-tc-server-developer-3.2.4.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.util.FileUtils.writeFile(FileUtils.java:117)
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:21)
+	... 5 more
+
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 15:05:58.384
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 15:05:59.364
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 15:06:00.364
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 15:06:01.856
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 15:06:02.486
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 15:06:03.513
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
